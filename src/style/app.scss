@@ -1,0 +1,15 @@
+#App {
+    font-family: minesweeper;
+    width: 100vw;
+    height: 100vh;    
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    background-color: black;
+    overflow-y: auto;
+    overflow-x: auto;
+    flex-direction: row;
+    margin: 0;
+    padding-top: 5rem;
+    box-sizing: border-box;
+}

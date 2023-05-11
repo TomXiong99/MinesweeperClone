@@ -1,0 +1,130 @@
+#Game {
+    background-color: lightgray;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;    
+    border-radius: 2.5rem;
+
+    .GameRow {
+        background-color: lightgray;
+        display: flex;        
+        flex-direction: row;
+        justify-content: center;        
+        
+        .GameSquare {
+            background-color: lightgray;
+            height: 2rem;
+            width: 2rem;
+            font-size: 1rem;
+            margin:1px;
+            outline: gray solid 1px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+            .GameSquare0 {
+                display: contents;
+            }
+
+            .GameSquare1 {                
+                display: contents;
+                color: blue;
+            }
+
+            .GameSquare2 {
+                display: contents;
+                color: green;
+            }
+
+            .GameSquare3 {
+                display: contents;
+                color: red;
+            }
+
+            .GameSquare4 {
+                display: contents;
+                color: darkblue;
+            }
+
+            .GameSquare5 {
+                display: contents;
+                color: brown;
+            }
+
+            .GameSquare6 {
+                display: contents;
+                color: cyan;
+            }
+
+            .GameSquare7 {
+                display: contents;
+                color: black;
+            }
+
+            .GameSquare8 {
+                display: contents;
+                color: gray;
+            }
+
+            .GameSquareHidden {
+                height: 1.9rem;
+                width: 1.9rem;
+                outline: gray solid 0.1rem;
+                background-color: darkgray;
+            }
+
+            .GameSquareFlag{
+                height: 1.9rem;
+                width: 1.9rem;
+                outline: gray solid 0.1rem;
+                background-color: darkgray;
+            }
+
+            .GameSquareBomb{
+                height: 2rem;
+                width: 2rem;
+            }
+            .IncorrectFlagLeft {
+                position: absolute;
+                background-color: red;
+                height: 1rem;
+                width: 0.05rem;
+                transform: rotate(45deg);
+            }
+
+            .IncorrectFlagRight {
+                position: absolute;
+                background-color: red;
+                height: 1rem;
+                width: 0.05rem;
+                transform: rotate(-45deg);
+
+            }
+        }
+        .GameoverSquare {
+            background-color: red;
+            height: 2rem;
+            width: 2rem;
+            margin: 1px;
+            font-size: rem;
+            outline: red solid 1px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+            .GameSquareBomb{
+                height: 2rem;
+                width: 2rem;
+            }
+        }
+    }
+    
+    #Won {
+        text-align: center;
+        width: 13rem;
+        height: 2rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
